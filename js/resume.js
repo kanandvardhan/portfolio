@@ -34,7 +34,7 @@
   });
 })(jQuery); // End of use strict
 
-fetch("https://kanandvardhan.github.io/data/projects.json")
+fetch("https://kanandvardhan.github.io/portfolio/data/projects.json")
   .then((response) => response.json())
   .then((projectsData) => {
     // Function to create project HTML

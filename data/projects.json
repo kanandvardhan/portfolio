@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Video Streaming App (Twitch clone) – Next.js App",
+    "link": "https://next14-twitch-clone-beta.vercel.app/",
+    "image": "/img/twitch-clone.png",
+    "technologies": [
+      "typescript-plain",
+      "nextjs-original",
+      "tailwindcss-plain",
+      "postgresql-plain"
+    ],
+    "description": "I developed a video streaming web application using Next.js, Tailwind CSS, Shadcn-ui library, Prisma ORM, Postgres SQL database, and livekit API for real-time streaming and community interaction."
+  },
+  {
+    "name": "E-commerce Webapp – MERN Project",
+    "link": "https://mern-ecommerce-gamma-one.vercel.app/",
+    "image": "/img/redux-ecom.png",
+    "technologies": [
+      "javascript-plain",
+      "react-original",
+      "express-original",
+      "mongodb-plain-wordmark",
+      "tailwindcss-plain",
+      "redux-original"
+    ],
+    "description": "I developed a feature-rich E-commerce web application utilizing the MERN stack with user authentication, secure payment processing using Stripe, and email services for product updates."
+  },
+  {
+    "name": "Employee Management System – React + SpringBoot",
+    "link": "https://mern-ecommerce-gamma-one.vercel.app/",
+    "image": "/img/ems.png",
+    "technologies": [
+      "java-plain",
+      "javascript-plain",
+      "react-original",
+      "bootstrap-plain",
+      "spring-plain",
+      "mysql-plain"
+    ],
+    "description": "Built a full stack application for managing employee data with authenticated, authorized roles using React.js, Spring Boot, and MySQL."
+  },
+  {
+    "name": "VMA Associates – Next.js App : Freelance",
+    "link": "https://vmaassociates.in",
+    "image": "/img/vma-associates.png",
+    "technologies": ["javascript-plain", "nextjs-plain", "tailwindcss-plain"],
+    "description": "Created VMA Associates, a business website using Next.js as a freelance developer."
+  },
+  {
+    "name": "Shop for Home – Online eComm App – Angular + Spring Boot",
+    "link": "",
+    "image": "/img/spring-ecom.png",
+    "technologies": [
+      "java-plain",
+      "typescript-plain",
+      "angularjs-plain",
+      "bootstrap-plain",
+      "spring-plain",
+      "postgresql-plain"
+    ],
+    "description": "Developed a full-stack E-commerce application using Angular, Spring Boot, and PostgreSQL during an internship at Wipro-Velocity. Also gained experience in deploying the application on AWS."
+  }
+]

@@ -247,3 +247,18 @@ function handleScroll() {
     progressBar.style.width = scrolled + "%";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", function () {
+    scrollToTopBtn.classList.toggle("active", window.scrollY > 400);
+  });
+
+  scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});

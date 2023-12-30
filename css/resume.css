@@ -9,6 +9,19 @@ body {
   color: #868e96;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
@@ -271,4 +284,19 @@ a.project-open:hover h3 {
 
 i {
   cursor: pointer;
+}
+
+.progress-bar {
+  background: #ff4163;
+  height: 5px;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.stick-to-left {
+  left: 0;
+  right: auto;
+  width: 5px;
 }

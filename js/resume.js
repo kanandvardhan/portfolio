@@ -224,3 +224,26 @@ $(function () {
   // Initialize tooltips
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+window.addEventListener("scroll", handleScroll);
+
+function handleScroll() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+
+  var progressBar = document.getElementById("progressBar");
+
+  // Check screen width and add/remove class accordingly
+  if (window.innerWidth < 991) {
+    progressBar.classList.add("stick-to-left");
+    progressBar.style.width = "";
+    progressBar.style.height = scrolled + "%";
+  } else {
+    progressBar.classList.remove("stick-to-left");
+    progressBar.style.height = "";
+    progressBar.style.width = scrolled + "%";
+  }
+}

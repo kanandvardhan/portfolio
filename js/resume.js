@@ -34,7 +34,7 @@
   });
 })(jQuery); // End of use strict
 
-fetch("../data/projects.json")
+fetch("https://kanandvardhan.github.io/data/projects.json")
   .then((response) => response.json())
   .then((projectsData) => {
     // Function to create project HTML

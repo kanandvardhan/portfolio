@@ -2,7 +2,7 @@
   {
     "name": "Video Streaming App (Twitch clone) – Next.js App",
     "link": "https://next14-twitch-clone-beta.vercel.app/",
-    "image": "/img/twitch-clone.png",
+    "image": "https://kanandvardhan.github.io/portfolio/img/twitch-clone.png",
     "technologies": [
       "typescript-plain",
       "nextjs-original",
@@ -14,7 +14,7 @@
   {
     "name": "E-commerce Webapp – MERN Project",
     "link": "https://mern-ecommerce-gamma-one.vercel.app/",
-    "image": "/img/redux-ecom.png",
+    "image": "https://kanandvardhan.github.io/portfolio/img/redux-ecom.png",
     "technologies": [
       "javascript-plain",
       "react-original",
@@ -28,7 +28,7 @@
   {
     "name": "Employee Management System – React + SpringBoot",
     "link": "#",
-    "image": "/img/ems.png",
+    "image": "https://kanandvardhan.github.io/portfolio/img/ems.png",
     "technologies": [
       "java-plain",
       "javascript-plain",
@@ -42,14 +42,14 @@
   {
     "name": "VMA Associates – Next.js App : Freelance",
     "link": "https://vmaassociates.in",
-    "image": "/img/vma-associates.png",
+    "image": "https://kanandvardhan.github.io/portfolio/img/vma-associates.png",
     "technologies": ["javascript-plain", "nextjs-plain", "tailwindcss-plain"],
     "description": "Created VMA Associates, a business website using Next.js as a freelance developer."
   },
   {
     "name": "Shop for Home – Online eComm App – Angular + Spring Boot",
     "link": "#",
-    "image": "/img/spring-ecom.png",
+    "image": "https://kanandvardhan.github.io/portfolio/img/spring-ecom.png",
     "technologies": [
       "java-plain",
       "typescript-plain",

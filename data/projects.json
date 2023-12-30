@@ -27,7 +27,7 @@
   },
   {
     "name": "Employee Management System – React + SpringBoot",
-    "link": "https://mern-ecommerce-gamma-one.vercel.app/",
+    "link": "#",
     "image": "/img/ems.png",
     "technologies": [
       "java-plain",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Shop for Home – Online eComm App – Angular + Spring Boot",
-    "link": "",
+    "link": "#",
     "image": "/img/spring-ecom.png",
     "technologies": [
       "java-plain",

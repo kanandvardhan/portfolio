@@ -76,3 +76,114 @@ fetch("../data/projects.json")
     });
   })
   .catch((error) => console.error("Error fetching projects data:", error));
+
+// EMAIL CONTACT
+
+$("#myForm").on("submit", function (event) {
+  event.preventDefault(); // prevent reload
+
+  var name = $("#name");
+  var email = $("#email");
+  var subject = $("#subject");
+  var message = $("#message");
+  var messageError = $("#messageError");
+  var submitButton = $(".btnContact");
+
+  // Change button text to "Sending"
+  submitButton.val("Sending...");
+
+  // Perform form validation
+  var isValid = validateForm();
+
+  if (!isValid) {
+    // Reset button text on validation failure
+    submitButton.val("Send Message");
+    return;
+  }
+
+  var formData = new FormData(this);
+  formData.append("service_id", "service_06275ve");
+  formData.append("template_id", "template_gktw59p");
+  formData.append("user_id", "tzMIRTToAGvXUNfY0");
+
+  $.ajax("https://api.emailjs.com/api/v1.0/email/send-form", {
+    type: "POST",
+    data: formData,
+    contentType: false, // auto-detection
+    processData: false, // no need to parse formData to string
+  })
+    .done(function () {
+      name.val("");
+      email.val("");
+      subject.val("");
+      message.val("");
+      // Reset button text on successful submission
+      submitButton.val("Message Sent!").css("background-color", "#7adc35");
+      // alert("Your message is sent!");
+    })
+    .fail(function (error) {
+      messageError.text("Oops... Something went wrong, please try again");
+      // Reset button text on failure
+      submitButton.val("Send Message");
+    });
+});
+
+function validateForm() {
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var subject = $("#subject").val();
+  var message = $("#message").val();
+
+  var nameError = $("#nameError");
+  var emailError = $("#emailError");
+  var subjectError = $("#subjectError");
+  var messageError = $("#messageError");
+
+  // Reset error messages
+  nameError.text("");
+  emailError.text("");
+  subjectError.text("");
+  messageError.text("");
+
+  var isValid = true;
+  var errorMessages = [];
+
+  // Basic form validation
+  if (name.trim() === "") {
+    nameError.text("Name is required");
+    errorMessages.push("Name is required");
+    isValid = false;
+  }
+
+  if (email.trim() === "") {
+    emailError.text("Email is required");
+    errorMessages.push("Email is required");
+    isValid = false;
+  } else {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      emailError.text("Invalid email");
+      errorMessages.push("Invalid email");
+      isValid = false;
+    }
+  }
+
+  if (subject.trim() === "") {
+    subjectError.text("Subject is required");
+    errorMessages.push("Subject is required");
+    isValid = false;
+  }
+
+  if (message.trim() === "") {
+    messageError.text("Message is required");
+    errorMessages.push("Message is required");
+    isValid = false;
+  }
+
+  // Display all error messages together
+  if (!isValid) {
+    // alert("Please fix the following errors:\n" + errorMessages.join("\n"));
+  }
+
+  return isValid; // Form is valid
+}

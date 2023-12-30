@@ -268,3 +268,7 @@ a.project-open:hover h3 {
 .btnSubmit2 {
   display: block;
 }
+
+i {
+  cursor: pointer;
+}

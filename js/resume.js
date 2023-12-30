@@ -56,10 +56,22 @@ fetch("../data/projects.json")
                  <h3 class="mb-0">${project.name}</h3>
                  <div class="subheading mb-3">
                     ${project.technologies
-                      .map(
-                        (tech) =>
-                          `<i class="devicon-${tech.toLowerCase()} colored">&nbsp;</i>`
-                      )
+                      .map((tech) => {
+                        iconName = tech
+                          .replace("devicon-", "")
+                          .replace("colored", "")
+                          .replace("-plain", "")
+                          .replace("-wordmark", "")
+                          .replace("-original", "")
+                          .trim();
+
+                        capitalizeIconName =
+                          iconName.charAt(0).toUpperCase() + iconName.slice(1);
+
+                        return `<i  data-toggle="tooltip"
+                          data-placement="bottom"
+                          title=${capitalizeIconName} class="devicon-${tech.toLowerCase()} colored">&nbsp;</i>`;
+                      })
                       .join("")}
                  </div>
               </a>
@@ -187,3 +199,28 @@ function validateForm() {
 
   return isValid; // Form is valid
 }
+
+// Add attributes to devicons
+$(function () {
+  $("i[class^='devicon-']").each(function () {
+    var iconName = $(this)
+      .attr("class")
+      .replace("devicon-", "")
+      .replace("colored", "")
+      .replace("-plain", "")
+      .replace("-wordmark", "")
+      .replace("-original", "")
+      .trim();
+
+    var capitalizeIconName =
+      iconName.charAt(0).toUpperCase() + iconName.slice(1);
+    $(this).attr({
+      "data-toggle": "tooltip",
+      "data-placement": "bottom",
+      title: capitalizeIconName,
+    });
+  });
+
+  // Initialize tooltips
+  $('[data-toggle="tooltip"]').tooltip();
+});

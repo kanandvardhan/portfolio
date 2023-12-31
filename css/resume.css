@@ -19,7 +19,8 @@ body {
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
-  cursor: url("/img/icons8-cursor-40.png"), auto;
+  cursor: url("https://kanandvardhan.github.io/portfolio/img/icons8-cursor-40.png"),
+    auto;
 }
 
 @keyframes gradient {
@@ -374,11 +375,13 @@ a.project-open:hover h3 {
 }
 
 .btnContact:hover {
-  cursor: url("/img/cursor-plane-40.png"), auto;
+  cursor: url("https://kanandvardhan.github.io/portfolio/img/cursor-plane-40.png"),
+    auto;
 }
 
 nav a:hover {
-  cursor: url("/img/icons8-search-40.png"), auto;
+  cursor: url("https://kanandvardhan.github.io/portfolio/img/icons8-search-40.png"),
+    auto;
 }
 
 i {
@@ -450,18 +453,22 @@ i {
 }
 
 a[href^="mailto:"]:hover {
-  cursor: url("/img/icons8-new-message-25.png"), auto;
+  cursor: url("https://kanandvardhan.github.io/portfolio/img/icons8-new-message-25.png"),
+    auto;
 }
 
 a[href^="tel:"]:hover {
-  cursor: url("/img/icons8-phone-25.png"), auto;
+  cursor: url("https://kanandvardhan.github.io/portfolio/img/icons8-phone-25.png"),
+    auto;
 }
 
 i.fa-download:hover {
-  cursor: url("/img/icons8-download-resume-30.png"), auto !important;
+  cursor: url("https://kanandvardhan.github.io/portfolio/img/icons8-download-resume-30.png"),
+    auto !important;
 }
 
 a.project-open,
 i.fa:hover {
-  cursor: url("/img/icons8-external-link-30.png"), auto;
+  cursor: url("https://kanandvardhan.github.io/portfolio/img/icons8-external-link-30.png"),
+    auto;
 }

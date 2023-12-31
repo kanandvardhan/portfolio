@@ -50,7 +50,7 @@ fetch("https://kanandvardhan.github.io/portfolio/data/projects.json")
         project.name
       }" />
                     <div class="img-overlay">
-                       <p class="text-center">Open</p>
+                       <p class="text-center">Open <i class="fa fa-external-link" aria-hidden="true"></i></p>
                     </div>
                  </div>
                  <h3 class="mb-0">${project.name}</h3>

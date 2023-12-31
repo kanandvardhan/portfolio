@@ -329,7 +329,21 @@ a.project-open:hover h3 {
   width: 11%;
   margin-top: -3%;
   transform: rotate(29deg);
+  animation: flyAway 2s linear infinite;
 }
+
+@keyframes flyAway {
+  0% {
+    transform: rotate(29deg) translateY(0);
+  }
+  50% {
+    transform: rotate(29deg) translateY(-20px); /* Adjust the vertical distance */
+  }
+  100% {
+    transform: rotate(29deg) translateY(0);
+  }
+}
+
 .contact-form form {
   padding: 14% 0;
 }

@@ -87,6 +87,7 @@ fetch("https://kanandvardhan.github.io/portfolio/data/projects.json")
       projectsContainer.innerHTML += createProjectHTML(project);
     });
   })
+  .then(() => $('[data-toggle="tooltip"]').tooltip())
   .catch((error) => console.error("Error fetching projects data:", error));
 
 // EMAIL CONTACT

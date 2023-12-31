@@ -405,10 +405,6 @@ i {
 }
 
 .centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ensure full viewport height for centering */
 }
 
 .progress-bar {

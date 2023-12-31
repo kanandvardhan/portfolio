@@ -54,10 +54,6 @@ h2 {
   color: #3498db;
 }
 
-nav {
-  background: radial-gradient(ellipse at bottom, #0d1d31f3 0%, #0c0d13 100%);
-}
-
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;

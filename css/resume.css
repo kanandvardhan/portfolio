@@ -6,7 +6,7 @@
 body {
   font-family: "Open Sans", serif;
   padding-top: 54px;
-  color: #868e96;
+  color: #4e5359;
   margin: auto;
   overflow: auto;
   /* background: linear-gradient(
@@ -166,6 +166,14 @@ h2 {
 }
 .list-icons .list-inline-item i:hover {
   color: #3498db;
+}
+
+nav {
+  background: radial-gradient(ellipse at bottom, #050c14f3 0%, #0c0d13 100%);
+}
+
+textarea {
+  resize: none;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -483,5 +491,6 @@ i.fa:hover {
 
 input,
 textarea {
-  cursor: url("/img/icons8-text-cursor-30.png"), auto;
+  cursor: url("https://kanandvardhan.github.io/portfolio/img/icons8-text-cursor-30.png"),
+    auto;
 }

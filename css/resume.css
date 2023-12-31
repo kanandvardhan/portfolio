@@ -19,7 +19,7 @@ body {
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
-  cursor: url("/img/cursor-48.png"), auto;
+  cursor: url("/img/icons8-cursor-40.png"), auto;
 }
 
 @keyframes gradient {
@@ -89,12 +89,12 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #888;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 body::-webkit-scrollbar-track {
@@ -458,7 +458,7 @@ a[href^="tel:"]:hover {
 }
 
 i.fa-download:hover {
-  cursor: url("/img/icons8-download-resume-30.png"), auto;
+  cursor: url("/img/icons8-download-resume-30.png"), auto !important;
 }
 
 a.project-open,

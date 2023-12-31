@@ -404,6 +404,13 @@ i {
   cursor: pointer;
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure full viewport height for centering */
+}
+
 .progress-bar {
   background: #ff4163;
   height: 5px;

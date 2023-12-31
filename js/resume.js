@@ -263,3 +263,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
+
+  function centerSections() {
+    sections.forEach((section) => {
+      console.log("centered");
+      if (isElementInViewport(section)) {
+        section.classList.add("centered");
+      } else {
+        section.classList.remove("centered");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", centerSections);
+  window.addEventListener("resize", centerSections);
+
+  // Initial check on page load
+  centerSections();
+});

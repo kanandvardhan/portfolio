@@ -263,40 +263,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-// console.log("centered");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("section");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const sections = document.querySelectorAll("section");
 
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top <= window.innerHeight / 2 &&
-      rect.bottom >= window.innerHeight / 2
-    );
-  }
+//   function isElementInViewport(el) {
+//     const rect = el.getBoundingClientRect();
+//     return (
+//       rect.top <= window.innerHeight / 2 &&
+//       rect.bottom >= window.innerHeight / 2
+//     );
+//   }
 
-  function centerSectionInView(section) {
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
+//   function centerSectionInView(section) {
+//     section.scrollIntoView({
+//       behavior: "smooth",
+//       block: "start",
+//     });
+//   }
 
-  function centerSections() {
-    sections.forEach((section) => {
-      if (isElementInViewport(section)) {
-        section.classList.add("centered");
-        centerSectionInView(section);
-      } else {
-        section.classList.remove("centered");
-      }
-    });
-  }
+//   function centerSections() {
+//     sections.forEach((section) => {
+//       if (isElementInViewport(section)) {
+//         section.classList.add("centered");
+//         centerSectionInView(section);
+//       } else {
+//         section.classList.remove("centered");
+//       }
+//     });
+//   }
 
-  window.addEventListener("scroll", centerSections);
-  window.addEventListener("resize", centerSections);
+//   window.addEventListener("scroll", centerSections);
+//   window.addEventListener("resize", centerSections);
 
-  // Initial check on page load
-  centerSections();
-});
+//   // Initial check on page load
+//   centerSections();
+// });

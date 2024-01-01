@@ -501,7 +501,7 @@ i.fa-download:hover {
 }
 
 a,
-i.fa:hover {
+i.fa:not(.fa-angle-double-up):hover {
   cursor: url("https://kanandvardhan.github.io/portfolio/img/icons8-external-link-30.png"),
     auto;
 }

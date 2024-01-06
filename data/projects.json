@@ -47,6 +47,13 @@
     "description": "Created VMA Associates, a business website using Next.js as a freelance developer."
   },
   {
+    "name": "Today I Learned",
+    "link": "https://todayilearned-anand.netlify.app/",
+    "image": "https://kanandvardhan.github.io/portfolio/img/today-i-learned.png",
+    "technologies": ["javascript-plain", "react-original", "postgresql-plain"],
+    "description": "Developed a knowledge based web app - Today I Learned, using React and Postgres, aiming to provide diverse information that keeps users updated on various global facts.This was my first ever web app using React. Users can also post facts of the day and the community can react to it."
+  },
+  {
     "name": "Shop for Home – Online eComm App – Angular + Spring Boot",
     "link": "#",
     "image": "https://kanandvardhan.github.io/portfolio/img/spring-ecom.png",
